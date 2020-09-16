@@ -15,3 +15,35 @@
   --special-yellow-active: #EAB534;
   --special-yellow-press: #E5A722;
 }
+/* Global */
+.page-body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-height: 100%;
+  height: auto;
+}
+
+/* Main-navigation*/
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-white);
+  background-color: transparent;
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-gray);
+}
