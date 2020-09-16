@@ -1,0 +1,17 @@
+/* Variables */
+:root {
+  --basic-gray: #EEEEEE;
+  --basic-dark-gray: #888888;
+  --basic-pink: #FB565A;
+  --basic-green: #00CA74;
+  --basic-yellow: #EFC849;
+  --basic-white: #FFFFFF;
+  --basic-black: #000000;
+
+  --special-pink-active: #E74246;
+  --special-pink-press: #D7373B;
+  --special-green-active: #00BC6C;
+  --special-green-press: #00AA62;
+  --special-yellow-active: #EAB534;
+  --special-yellow-press: #E5A722;
+}
