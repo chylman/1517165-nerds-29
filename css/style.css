@@ -7,7 +7,10 @@
   --basic-yellow: #EFC849;
   --basic-white: #FFFFFF;
   --basic-black: #000000;
+  --basic-light-black: #283136;
 
+  --special-black-opacity: rgba(0,0,0,0.3);
+  --special-white-opacity: rgba(255, 0, 0,0.3);
   --special-pink-active: #E74246;
   --special-pink-press: #D7373B;
   --special-green-active: #00BC6C;
@@ -24,6 +27,7 @@
   line-height: 24px;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  min-width: 1157px;
 }
 
 a {
@@ -50,4 +54,130 @@ img {
 
 .site-navigation {
   list-style: none;
+}
+
+/*User navigation*/
+
+.site-navigation a,
+.basket-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.basket-navigation a:hover{
+  color: var(--basic-pink);
+}
+
+.site-navigation a:focus,
+.basket-navigation a:focus{
+  color: var(--special-black-opacity);
+}
+
+/* Slogan */
+
+.slogan {
+  background-color: var(--basic-gray);
+}
+
+.main-slogan {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.content-slogan {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.more {
+  background-color: var(--basic-pink);
+  color: var(--basic-white);
+}
+
+.more:hover {
+  background-color: var(--special-pink-active);
+}
+
+.more:focus{
+  color: var(--special-white-opacity);
+  background-color: var(--special-pink-press);
+}
+
+/* Slider */
+
+.slider-content {
+  background-color: var(--basic-gray);
+}
+
+/* Product */
+
+.product article {
+  background-color: var(--basic-white);
+}
+
+.product-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.product-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-light-black);
+}
+
+.product-img {
+  background-color: var(--basic-gray);
+}
+
+.product-button {
+  color: var(--basic-white);
+}
+
+.product-button:hover {
+  color: var(--basic-white);
+}
+
+.product-button:focus {
+  color: var(--special-white-opacity);
+}
+
+.button-pink {
+  background-color: var(--basic-pink);
+}
+
+.button-green {
+  background-color: var(--basic-green);
+}
+
+.button-yellow {
+  background-color: var(--basic-yellow);
+}
+
+.button-pink:hover {
+  background-color: var(--special-pink-active);
+}
+
+.button-green:hover {
+  background-color: var(--special-green-active);
+}
+
+.button-yellow:hover {
+  background-color: var(--special-yellow-active);
+}
+
+.button-pink:focus {
+  background-color: var(--special-pink-press);
+}
+
+.button-green:focus {
+  background-color: var(--special-green-press);
+}
+
+.button-yellow:focus {
+  background-color: var(--special-yellow-press);
 }
