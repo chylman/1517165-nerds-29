@@ -2,6 +2,7 @@
 :root {
   --basic-gray: #EEEEEE;
   --basic-dark-gray: #888888;
+  --basic-light-gray: #666666;
   --basic-pink: #FB565A;
   --basic-green: #00CA74;
   --basic-yellow: #EFC849;
@@ -180,4 +181,83 @@ img {
 
 .button-yellow:focus {
   background-color: var(--special-yellow-press);
+}
+
+/* About */
+
+.about-opportunities {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about-opportunities-losung {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.about-opportunities-preview {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--basic-light-black);
+}
+
+.about-opportunities-list {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-light-black);
+}
+
+.about-level-text {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-level-discription-term {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+  color: var(--basic-black);
+}
+
+.about-level-discription-term span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.about-level-discription-definition {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-light-black);
+}
+
+/* Contacts */
+
+.contacts-title-content {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contacts-text-content {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-light-gray);
+}
+
+.send-message {
+  background-color: var(--basic-pink);
+  border-radius: 3px;
 }
