@@ -22,13 +22,13 @@
 /* Global */
 .page-body {
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: var(--basic-black);
   background-color: var(--basic-white);
-  min-width: 1157px;
+  min-width: 1158px;
 }
 
 a {
