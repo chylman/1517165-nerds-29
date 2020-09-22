@@ -1,99 +1,106 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <header>
-      <nav>
-        <a href="index.html">
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
           <img src="https://via.placeholder.com/159x65" alt="" width="159" height="65">
         </a>
-        <ul>
-          <li><a href="">Студия</a></li>
-          <li><a href="">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-        <a href="">Корзина</a>
+        <div class="main-navigation-wrapper">
+          <div class="container">
+            <ul class="site-navigation">
+              <li><a href="">Студия</a></li>
+              <li><a href="">Клиенты</a></li>
+              <li><a href="catalog.html">Магазин</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="basket-navigation">
+            <a class="link-basket" href="">Корзина</a>
+          </div>
+        </div>
       </nav>
+
     </header>
-    <main>
-      <h1>Магазин готовых шаблонов</h1>
-      <section>
-      <h2>Фильтр</h2>
+    <main class="wrapper">
+      <h1 class="main-title">Магазин готовых шаблонов</h1>
+      <section class="filter">
+      <h2 class="hidden">Фильтр</h2>
         <form class="" action="https://echo.htmlacademy.ru/" method="post">
           //Фильтр товаров
         </form>
       </section>
-      <section>
-        <h2>Сортировка</h2>
-        <p>Сортировать</p>
-        <ul>
-          <li> <button type="button" name="button">По цене</button></li>
-          <li> <button type="button" name="button">По типу</button></li>
-          <li> <button type="button" name="button">По названию</button></li>
-          <li> <button type="button" name="button">По убыванию</button></li>
-          <li> <button type="button" name="button">По возрастанию</button></li>
+      <section class="sorting">
+        <h2 class="hidden">Сортировка</h2>
+        <p class="sorting-text">Сортировать</p>
+        <ul class="sorting-list">
+          <li> <button class="sorting-item" type="button" name="button">По цене</button></li>
+          <li> <button class="sorting-item" type="button" name="button">По типу</button></li>
+          <li> <button class="sorting-item" type="button" name="button">По названию</button></li>
+          <li> <button class="sorting-item" type="button" name="button">По убыванию</button></li>
+          <li> <button class="sorting-item" type="button" name="button">По возрастанию</button></li>
         </ul>
       </section>
-      <section>
-        <h2>Карточки товаров</h2>
-        <article class="">
-          <img src="https://via.placeholder.com/358x576" alt="" width="358px" height="576px">
-          <a href="#"><h3>Sedona</h3></a>
-          <p>Информационный сайт для туристов</p>
-          <button type="button" name="">9990&#8381;</button>
+      <section class="product-card">
+        <h2 class="hidden">Карточки товаров</h2>
+        <article class="product-card-item">
+          <img class="product-card-item-img" src="https://via.placeholder.com/358x576" alt="" width="358px" height="576px">
+          <a class="product-card-item-link" href="#"><h3>Sedona</h3></a>
+          <p class="product-card-item-text">Информационный сайт для туристов</p>
+          <button class="buy" type="button" name="">9990&#8381;</button>
         </article>
-        <article class="">
-          <img src="https://via.placeholder.com/358x576" alt=""width="358px" height="576px">
-          <a href="#"><h3>Pink App</h3></a>
-          <p>Продуктовый лендинг приложения для iOS и Android</p>
-          <button type="button" name="">9990&#8381;</button>
+        <article class="product-card-item">
+          <img class="product-card-item-img" src="https://via.placeholder.com/358x576" alt=""width="358px" height="576px">
+          <a class="product-card-item-link" href="#"><h3>Pink App</h3></a>
+          <p class="product-card-item-text">Продуктовый лендинг приложения для iOS и Android</p>
+          <button class="buy" type="button" name="">9990&#8381;</button>
         </article>
-        <article class="">
-          <img src="https://via.placeholder.com/358x576" alt="" width="358px" height="576px">
-          <a href="#"><h3>Barbershop Borodinski</h3></a>
-          <p>Сайт Барбершопа</p>
-          <button type="button" name="">9990&#8381;</button>
+        <article class="product-card-item">
+          <img class="product-card-item-img" src="https://via.placeholder.com/358x576" alt="" width="358px" height="576px">
+          <a class="product-card-item-link" href="#"><h3>Barbershop Borodinski</h3></a>
+          <p class="product-card-item-text">Сайт Барбершопа</p>
+          <button class="buy" type="button" name="">9990&#8381;</button>
         </article>
-        <article class="">
-          <img src="https://via.placeholder.com/358x576" alt="" width="358px" height="576px">
-          <a href="#"><h3>Mishka</h3></a>
-          <p>Магазин вязаных Мишек ручной работы</p>
-          <button type="button" name="">9990&#8381;</button>
+        <article class="product-card-item">
+          <img class="product-card-item-img" src="https://via.placeholder.com/358x576" alt="" width="358px" height="576px">
+          <a class="product-card-item-link" href="#"><h3>Mishka</h3></a>
+          <p class="product-card-item-text">Магазин вязаных Мишек ручной работы</p>
+          <button class="buy" type="button" name="">9990&#8381;</button>
         </article>
-        <article class="">
-          <ul>
-            <li><a>1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">Следующая</a></li>
+        <article class="product-card-pagination">
+          <ul class="product-card-pagination-list">
+            <li class="product-card-pagination-item"><a>1</a></li>
+            <li class="product-card-pagination-item"><a href="#">2</a></li>
+            <li class="product-card-pagination-item"><a href="#">3</a></li>
+            <li class="product-card-pagination-item"><a href="#">Следующая</a></li>
           </ul>
         </article>
       </section>
     </main>
     <footer>
-      <section>
-        <h2>Контакты</h2>
-        <p>NЁRDS DESIGNE STUDIO</p>
-        <p>191186, Санкт-Петербург,<br> ул.Б.Конюшенная, д. 19/8</p>
-        <a href="tel:+78122757575">тел.+7(812)275-75-75</a>
-        <button type="button">Напишите нам</button>
+      <section class="contacts">
+        <h2 class="hidden">Контакты</h2>
+        <p class="contacts-title-content">NЁRDS DESIGNE STUDIO</p>
+        <p class="contacts-text-content">191186, Санкт-Петербург,<br> ул.Б.Конюшенная, д. 19/8</p>
+        <a class="telephone-link" href="tel:+78122757575">тел.+7(812)275-75-75</a>
+        <button class="send-message" type="button">Напишите нам</button>
       </section>
-      <section>
-        <ul>
-          <li>
+      <section class="socials">
+        <ul class="socials-list">
+          <li class="socials-item">
             <a href="#">VK</a>
           </li>
-          <li>
+          <li class="socials-item">
             <a href="#">Facebook</a>
           </li>
-          <li>
+          <li class="socials-item">
             <a href="#">Instagram</a>
           </li>
         </ul>
