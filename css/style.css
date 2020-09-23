@@ -55,6 +55,9 @@ img {
 
 /* Main-navigation*/
 
+.main-header {
+  background-color: var(--basic-gray);
+}
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
@@ -63,9 +66,7 @@ img {
   padding: 0;
 }
 
-.main-navigation-wrapper {
-  background-color: var(--basic-gray);
-}
+
 
 .site-navigation {
   list-style: none;
@@ -126,6 +127,9 @@ img {
   background-color: var(--basic-gray);
 }
 
+.slider-list {
+  list-style: none;
+}
 /* Product */
 
 .product article {
@@ -252,6 +256,14 @@ img {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-light-black);
+}
+
+/* partners */
+
+.partners-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Contacts */
