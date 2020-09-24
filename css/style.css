@@ -68,8 +68,10 @@ img {
 
 .main-header {
   background-color: var(--basic-gray);
+  margin-bottom: 70px;
 }
 .main-navigation {
+  display: grid;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-white);
@@ -82,6 +84,15 @@ img {
 .site-navigation {
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+.main-navigation {
+  display: grid;
+  width: 798px;
+  grid-template-columns: 1fr min-content;
+  padding: 0 10px;
+  margin: 0 auto;
 }
 
 /*User navigation*/
