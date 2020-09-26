@@ -67,7 +67,6 @@ img {
 /* Main-navigation*/
 
 .main-header {
-  background-color: var(--basic-gray);
   margin-bottom: 70px;
 }
 .main-navigation {
@@ -77,6 +76,7 @@ img {
   color: var(--basic-white);
   background-color: transparent;
   padding: 0;
+  background-color: var(--basic-gray);
 }
 
 
@@ -87,7 +87,7 @@ img {
   margin: 0;
 }
 
-.main-navigation {
+.main-navigation-wrapper {
   display: grid;
   width: 798px;
   grid-template-columns: 1fr min-content;
