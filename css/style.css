@@ -71,6 +71,7 @@ img {
 }
 .main-navigation {
   display: grid;
+  grid-template-columns: min-content 1fr;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-white);
@@ -91,11 +92,14 @@ img {
   display: grid;
   width: 798px;
   grid-template-columns: 1fr min-content;
-  padding: 0 10px;
-  margin: 0 auto;
+  padding-right: 10px;
 }
 
 /*User navigation*/
+.basket-navigation{
+  max-width: 120px;
+  padding-right: 10px;
+}
 
 .site-navigation a,
 .basket-navigation a {
@@ -114,8 +118,13 @@ img {
 
 /* Slogan */
 
-.slogan {
+.index-columns{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: var(--basic-gray);
+}
+.slider-content{
+  margin: 0;
 }
 
 .main-slogan {
@@ -153,6 +162,11 @@ img {
   list-style: none;
 }
 /* Product */
+
+.layout-product{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
 
 .product article {
   background-color: var(--basic-white);
@@ -225,6 +239,14 @@ img {
 }
 
 /* About */
+.about{
+  min-width: 360px;
+}
+
+.layout-about{
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
 
 .about-opportunities {
   font-size: 16px;
@@ -286,10 +308,20 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 /* Contacts */
 
+.layout-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.socials {
+  grid-column: 1/2;
+}
 .contacts-title-content {
   font-style: normal;
   font-weight: bold;
