@@ -66,9 +66,6 @@ img {
 
 /* Main-navigation*/
 
-.main-header {
-  margin-bottom: 70px;
-}
 .main-navigation {
   display: grid;
   grid-template-columns: min-content 1fr;
@@ -86,6 +83,7 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
+
 }
 
 .main-navigation-wrapper {
@@ -93,6 +91,8 @@ img {
   width: 798px;
   grid-template-columns: 1fr min-content;
   padding-right: 10px;
+  padding-left: 10px;
+  text-transform: uppercase;
 }
 
 /*User navigation*/
@@ -117,6 +117,10 @@ img {
 }
 
 /* Slogan */
+
+.slogan {
+  width: 380px;
+}
 
 .index-columns{
   display: grid;
@@ -180,6 +184,7 @@ grid-template-columns: 1fr 1fr 1fr;
 }
 
 .product-text {
+  width: 250px;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -254,9 +259,14 @@ grid-template-columns: 1fr 1fr 1fr;
 }
 
 .about-opportunities-losung {
+  width: 650px;
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
+}
+
+.about-opportunities-text {
+width: 615px;
 }
 
 .about-opportunities-preview {
@@ -312,6 +322,9 @@ grid-template-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.partners-item {
+  margin: 0 auto;
+}
 /* Contacts */
 
 .layout-footer {
@@ -322,6 +335,12 @@ grid-template-columns: 1fr 1fr 1fr;
 .socials {
   grid-column: 1/2;
 }
+
+.contacts {
+  width: 319px;
+  height: 308px;
+}
+
 .contacts-title-content {
   font-style: normal;
   font-weight: bold;
@@ -366,8 +385,6 @@ grid-template-columns: 1fr 1fr 1fr;
   font-size:55px;
   line-height: 55px;
   background-color: var(--basic-gray);
-  padding: 0;
-  margin: 0;
 }
 
 .sorting {
