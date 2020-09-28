@@ -98,6 +98,11 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
+  height: 75.57px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -175,12 +180,18 @@ img {
 
 /* Slider */
 
+.slider {
+
+}
+
 .slider-content {
   background-color: var(--basic-gray);
 }
 
 .slider-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 /* Product */
 
@@ -262,7 +273,16 @@ grid-template-columns: 1fr 1fr 1fr;
 
 /* About */
 .about{
-  min-width: 360px;
+  width: 360px;
+}
+
+.about-level-discription{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 22px;
+  grid-row-gap: 27px;
 }
 
 .layout-about{
@@ -312,6 +332,12 @@ width: 615px;
   font-size: 45px;
   line-height: 64px;
   color: var(--basic-black);
+  grid-row: 1/2;
+}
+
+.about-level-discription-definition {
+  margin: 0;
+
 }
 
 .about-level-discription-term span {
