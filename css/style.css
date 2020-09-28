@@ -379,12 +379,24 @@ width: 615px;
 
 /* Catalog*/
 
+.layout-catalog-columns{
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: min-content min-content;
+}
+
+.filter {
+  grid-row: 1/3;
+  width: 260px;
+}
+
 .main-title {
   font-weight: 500;
   font-style: normal;
   font-size:55px;
   line-height: 55px;
   background-color: var(--basic-gray);
+  margin: 0;
 }
 
 .sorting {
@@ -397,6 +409,7 @@ width: 615px;
 
 .sorting-text {
   text-transform: uppercase;
+  margin: 0;
 }
 
 .sorting-list {
