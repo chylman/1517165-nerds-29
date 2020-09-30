@@ -8,82 +8,88 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body inner-page">
-    <header class="main-header wrapper">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img\nerds-logo.svg" alt="Логотип Nerds" width="159" height="65">
-        </a>
-        <div class="main-navigation-wrapper">
-          <div class="container">
-            <ul class="site-navigation">
-              <li><a href="">Студия</a></li>
-              <li><a href="">Клиенты</a></li>
-              <li><a href="catalog.html">Магазин</a></li>
-              <li><a href="">Контакты</a></li>
-            </ul>
+    <div class="background">
+      <header class="main-header wrapper">
+        <nav class="main-navigation">
+          <a class="main-header-logo" href="index.html">
+            <img src="img\nerds-logo.svg" alt="Логотип Nerds" width="159" height="65">
+          </a>
+          <div class="main-navigation-wrapper">
+            <div class="container">
+              <ul class="site-navigation">
+                <li><a href="">Студия</a></li>
+                <li><a href="">Клиенты</a></li>
+                <li><a href="catalog.html">Магазин</a></li>
+                <li><a href="">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="basket-navigation">
+              <a class="link-basket" href="">Корзина</a>
+            </div>
           </div>
-          <div class="basket-navigation">
-            <a class="link-basket" href="">Корзина</a>
-          </div>
-        </div>
-      </nav>
+        </nav>
 
-    </header>
-    <main class="wrapper">
-      <h1 class="main-title">Магазин готовых шаблонов</h1>
-      <div class="layout-catalog-columns">
-        <section class="filter">
-          <h2 class="hidden">Фильтр</h2>
-          <form class="" action="https://echo.htmlacademy.ru/" method="post">
-            //Фильтр товаров
-          </form>
-        </section>
-        <section class="sorting">
-          <h2 class="hidden">Сортировка</h2>
-          <p class="sorting-text">Сортировать</p>
-          <ul class="sorting-list">
-            <li> <button class="sorting-item" type="button" name="button" disabled>По цене</button></li>
-            <li> <button class="sorting-item" type="button" name="button">По типу</button></li>
-            <li> <button class="sorting-item" type="button" name="button">По названию</button></li>
-            <li> <button class="sorting-item" type="button" name="button">По убыванию</button></li>
-            <li> <button class="sorting-item" type="button" name="button">По возрастанию</button></li>
-          </ul>
-        </section>
-        <section class="product-card">
-          <h2 class="hidden">Карточки товаров</h2>
-          <article class="product-card-item">
-            <img class="product-card-item-img" src="img/Sedona.jpg" alt="Screenshot Sedona" width="358px" height="576px">
-            <a class="product-card-item-link" href="#"><h3>Sedona</h3></a>
-            <p class="product-card-item-text">Информационный сайт для туристов</p>
-            <button class="buy" type="button" name="">9990&#8381;</button>
-          </article>
-          <article class="product-card-item">
-            <img class="product-card-item-img" src="img/pink.jpg" alt="Screenshot Pink App"width="358px" height="576px">
-            <a class="product-card-item-link" href="#"><h3>Pink App</h3></a>
-            <p class="product-card-item-text">Продуктовый лендинг приложения для iOS и Android</p>
-            <button class="buy" type="button" name="">9990&#8381;</button>
-          </article>
-          <article class="product-card-item">
-            <img class="product-card-item-img" src="img/Borodinski.jpg" alt="Screenshot Barbershop Borodinski" width="358px" height="576px">
-            <a class="product-card-item-link" href="#"><h3>Barbershop Borodinski</h3></a>
-            <p class="product-card-item-text">Сайт Барбершопа</p>
-            <button class="buy" type="button" name="">9990&#8381;</button>
-          </article>
-          <article class="product-card-item">
-            <img class="product-card-item-img" src="img/Mishka.jpg" alt="Screenshot internet-shop Mishka" width="358px" height="576px">
-            <a class="product-card-item-link" href="#"><h3>Mishka</h3></a>
-            <p class="product-card-item-text">Магазин вязаных Мишек ручной работы</p>
-            <button class="buy" type="button" name="">9990&#8381;</button>
-          </article>
-          <article class="product-card-pagination">
-            <ul class="product-card-pagination-list">
-              <li class="product-card-pagination-item"><a>1</a></li>
-              <li class="product-card-pagination-item"><a href="#">2</a></li>
-              <li class="product-card-pagination-item"><a href="#">3</a></li>
-              <li class="product-card-pagination-item"><a href="#">Следующая</a></li>
+      </header>
+    </div>
+    <main>
+      <div class="background">
+        <h1 class="main-title">Магазин готовых шаблонов</h1>
+      </div>
+      <div class="wrapper">
+        <div class="layout-catalog-columns">
+          <section class="filter">
+            <h2 class="hidden">Фильтр</h2>
+            <form class="" action="https://echo.htmlacademy.ru/" method="post">
+              //Фильтр товаров
+            </form>
+          </section>
+          <section class="sorting">
+            <h2 class="hidden">Сортировка</h2>
+            <p class="sorting-text">Сортировать:</p>
+            <ul class="sorting-list">
+              <li> <button class="sorting-item" type="button" name="button" disabled>По цене</button></li>
+              <li> <button class="sorting-item" type="button" name="button">По типу</button></li>
+              <li> <button class="sorting-item" type="button" name="button">По названию</button></li>
+              <li> <button class="sorting-item" type="button" name="button">По убыванию</button></li>
+              <li> <button class="sorting-item" type="button" name="button">По возрастанию</button></li>
             </ul>
-          </article>
-        </section>
+          </section>
+          <section class="product-card">
+            <h2 class="hidden">Карточки товаров</h2>
+            <article class="product-card-item">
+              <img class="product-card-item-img" src="img/Sedona.jpg" alt="Screenshot Sedona" width="358px" height="576px">
+              <a class="product-card-item-link" href="#"><h3>Sedona</h3></a>
+              <p class="product-card-item-text">Информационный сайт для туристов</p>
+              <button class="buy" type="button" name="">9990&#8381;</button>
+            </article>
+            <article class="product-card-item">
+              <img class="product-card-item-img" src="img/pink.jpg" alt="Screenshot Pink App"width="358px" height="576px">
+              <a class="product-card-item-link" href="#"><h3>Pink App</h3></a>
+              <p class="product-card-item-text">Продуктовый лендинг приложения для iOS и Android</p>
+              <button class="buy" type="button" name="">9990&#8381;</button>
+            </article>
+            <article class="product-card-item">
+              <img class="product-card-item-img" src="img/Borodinski.jpg" alt="Screenshot Barbershop Borodinski" width="358px" height="576px">
+              <a class="product-card-item-link" href="#"><h3>Barbershop Borodinski</h3></a>
+              <p class="product-card-item-text">Сайт Барбершопа</p>
+              <button class="buy" type="button" name="">9990&#8381;</button>
+            </article>
+            <article class="product-card-item">
+              <img class="product-card-item-img" src="img/Mishka.jpg" alt="Screenshot internet-shop Mishka" width="358px" height="576px">
+              <a class="product-card-item-link" href="#"><h3>Mishka</h3></a>
+              <p class="product-card-item-text">Магазин вязаных Мишек ручной работы</p>
+              <button class="buy" type="button" name="">9990&#8381;</button>
+            </article>
+            <article class="product-card-pagination">
+              <ul class="product-card-pagination-list">
+                <li class="product-card-pagination-item"><a>1</a></li>
+                <li class="product-card-pagination-item"><a href="#">2</a></li>
+                <li class="product-card-pagination-item"><a href="#">3</a></li>
+                <li class="product-card-pagination-item"><a href="#">Следующая</a></li>
+              </ul>
+            </article>
+          </section>
+        </div>
       </div>
     </main>
     <footer class="wrapper">
