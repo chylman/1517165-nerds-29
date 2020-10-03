@@ -32,9 +32,10 @@
 }
 
 /* Global */
+
 .page-body {
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 5px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -69,6 +70,10 @@ img {
   width: 1160px;
 }
 
+button {
+  font-family: "Roboto";
+}
+
 /* Main-navigation*/
 
 .background {
@@ -82,6 +87,7 @@ img {
   line-height: 30px;
   color: var(--basic-white);
   background-color: transparent;
+  margin-top: 49px;
   padding: 0;
   background-color: var(--basic-gray);
 }
@@ -143,7 +149,7 @@ img {
 /* Slogan */
 
 .slogan {
-  width: 380px;
+  width: 397px;
 }
 
 .index-columns{
@@ -159,14 +165,27 @@ img {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  margin-bottom: 25px;
 }
 
 .content-slogan {
   font-size: 16px;
   line-height: 24px;
+  margin-bottom: 35px;
 }
 
 .more {
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 240px;
+  height: 50px;
+  border-radius: 3px;
   background-color: var(--basic-pink);
   color: var(--basic-white);
 }
@@ -187,15 +206,51 @@ img {
 }
 
 .slider-content {
-  background-color: var(--basic-gray);
+  width: 760px;
+  height: 431px;
+}
+
+.slider-bgr-1 {
+  background-image: url("../img/slide1.png");
+}
+
+.slider-bgr-2 {
+  background-image: url("../img/slide2.png");
+}
+
+.slider-bgr-3 {
+  background-image: url("../img/slide3.png");
 }
 
 .slider-list {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 431px;
+  width: 88px;
+  justify-content: space-between;
   list-style: none;
-  padding: 0;
+  padding-left: 139px;
   margin: 0;
 }
+
+.slider-button {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid var(--basic-white);
+  background-color: var(--basic-white);
+  cursor: pointer;
+}
 /* Product */
+
+.product h2 {
+  margin: 0;
+}
+
+.product {
+  margin: 80px 0;
+}
 
 .layout-product{
 display: grid;
@@ -211,10 +266,13 @@ grid-template-columns: 1fr 1fr 1fr;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 16px;
 }
 
 .product-text {
   width: 250px;
+  margin-bottom: 32px;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -226,9 +284,18 @@ grid-template-columns: 1fr 1fr 1fr;
 }
 
 .product-button {
+  width: 160px;
+  height: 50px;
+  text-align: center;
+  border-radius: 3px;
+  border: 0;
   color: var(--basic-white);
+  text-transform: uppercase;
+  font-weight: 500; 
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
 }
-
 .product-button:hover {
   color: var(--basic-white);
 }
