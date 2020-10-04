@@ -123,6 +123,22 @@ button {
   text-align: right;
 }
 
+.basket-navigation .link-basket {
+  position: relative;
+}
+
+.link-basket::before {
+  content:"";
+  position: absolute;
+  top: 3px;
+  left: -30px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/cart-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .site-navigation li {
   margin-right: 44px;
 }
@@ -351,12 +367,26 @@ grid-template-columns: 1fr 1fr 1fr;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-column-gap: 22px;
-  grid-row-gap: 27px;
+  grid-row-gap: 10px;
 }
 
 .layout-about{
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr min-content;
+  width: 1160px;
+  margin-bottom: 75px;
+}
+
+.about-level {
+  text-align: center;
+}
+
+.about::before{
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 1158px;
+  background-color: var(--basic-gray); 
 }
 
 .about-opportunities {
@@ -369,10 +399,14 @@ grid-template-columns: 1fr 1fr 1fr;
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
+  margin-top: 73px;
+  margin-bottom: 32px;
 }
 
 .about-opportunities-text {
 width: 615px;
+margin: 0;
+
 }
 
 .about-opportunities-preview {
@@ -381,6 +415,8 @@ width: 615px;
   line-height: 24px;
   text-transform: uppercase;
   color: var(--basic-light-black);
+  margin-bottom: 23px;
+  margin-top: 40px;
 }
 
 .about-opportunities-list {
@@ -388,11 +424,46 @@ width: 615px;
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-light-black);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.about-opportunities-item {
+  padding-left: 32px;
+  margin-bottom: 36px;
+  position: relative;
+}
+
+.about-opportunities-item::before {
+  content:"";
+  position: absolute;
+  left: 0px;
+  top: 11px;
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-pink);
 }
 
 .about-level-text {
   font-weight: bold;
   text-transform: uppercase;
+  padding-top: 284px;
+  position: relative;
+  margin-top: 18px;
+  margin-bottom: 31px;
+}
+
+.about-level-text::before {
+  content: "";
+  width: 360px;
+  height: 208px;
+  background-image: url(../img/nerds-illustration1.png);
+  background-position: 0 0;
+  position: absolute;
+  top: 39px;
+  left: -17px;
 }
 
 .about-level-discription-term {
@@ -406,7 +477,7 @@ width: 615px;
 
 .about-level-discription-definition {
   margin: 0;
-
+  text-align: left;
 }
 
 .about-level-discription-term span {
@@ -414,6 +485,7 @@ width: 615px;
   font-weight: bold;
   font-size: 26px;
   line-height: 40px;
+  vertical-align: super;
 }
 
 .about-level-discription-definition {
