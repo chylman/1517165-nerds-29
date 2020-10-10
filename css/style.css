@@ -1,6 +1,7 @@
 /* Variables */
 :root {
   --basic-gray: #EEEEEE;
+  --basic-gray-darkinest: #c1c1c1;
   --basic-over-dark-gray: rgba(77, 77, 77, 1);
   --basic-dark-gray-200: #444444;
   --basic-dark-gray: #888888;
@@ -262,6 +263,24 @@ button {
   background-color: var(--basic-white);
   cursor: pointer;
 }
+
+.slider-button-active {
+  position: relative;
+}
+
+.slider-button-active:before {
+  content:"";
+  position: absolute;
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--basic-white);
+  border: 3px solid var(--basic-gray-darkinest);
+  top: 3px;
+  left: 3px;
+}
+
 /* Product */
 
 .product h2 {
