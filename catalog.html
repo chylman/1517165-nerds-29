@@ -18,7 +18,7 @@
             <ul class="site-navigation">
               <li><a href="">Студия</a></li>
               <li><a href="">Клиенты</a></li>
-              <li><a href="catalog.html">Магазин</a></li>
+              <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
               <li><a href="">Контакты</a></li>
             </ul>
           <div class="basket-navigation">
@@ -47,8 +47,8 @@
               <li> <button class="sorting-item" type="button" name="button" disabled>По цене</button></li>
               <li> <button class="sorting-item" type="button" name="button">По типу</button></li>
               <li> <button class="sorting-item" type="button" name="button">По названию</button></li>
-              <li> <button class="sorting-item" type="button" name="button">По убыванию</button></li>
-              <li> <button class="sorting-item" type="button" name="button">По возрастанию</button></li>
+              <li> <button class="sorting-item descending-sort sorting-current" type="button" name="button" area-label="По убыванию"></button></li>
+              <li> <button class="sorting-item ascending-sort" type="button" name="button" aria-label="По возрастанию"></button></li>
             </ul>
           </section>
           <section class="product-card">
@@ -87,7 +87,7 @@
             </article>
             <article class="product-card-pagination">
               <ul class="product-card-pagination-list">
-                <li class="product-card-pagination-item"><a>1</a></li>
+                <li class="product-card-pagination-item current-page"><a>1</a></li>
                 <li class="product-card-pagination-item"><a href="#">2</a></li>
                 <li class="product-card-pagination-item"><a href="#">3</a></li>
                 <li class="product-card-pagination-item"><a href="#">Следующая</a></li>
