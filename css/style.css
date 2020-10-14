@@ -108,19 +108,20 @@ button {
   background-color: var(--basic-gray);
 }
 
-
-
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 2px;
+  margin-left: 202px;
+  margin-right: 286px;
   width: 885px;
-  height: 75.57px;
+  min-height: 75.57px;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
@@ -157,17 +158,19 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
+  margin-top: 2px;
 }
 
 .basket-navigation .link-basket {
   position: relative;
+  margin-top: 0px;
 }
 
 .link-basket::before {
   content:"";
   position: absolute;
   top: 3px;
-  left: -30px;
+  left: -40px;
   width: 15px;
   height: 15px;
   background-image: url(../img/cart-icon.svg);
@@ -201,7 +204,7 @@ button {
 /* Slogan */
 
 .slogan {
-  width: 416px;
+  width: 397px;
 }
 
 .index-columns{
@@ -218,12 +221,13 @@ button {
   font-size: 55px;
   line-height: 55px;
   margin-bottom: 25px;
+  margin-top: 66px;
 }
 
 .content-slogan {
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .more {
@@ -257,19 +261,22 @@ button {
 
 .slider-content {
   width: 760px;
-  height: 431px;
+  height: 420px;
 }
 
 .slider-bgr-1 {
   background-image: url("../img/slide1.png");
+  background-position: 0 -12px;
 }
 
 .slider-bgr-2 {
   background-image: url("../img/slide2.png");
+  background-position: 0 -12px;
 }
 
 .slider-bgr-3 {
   background-image: url("../img/slide3.png");
+  background-position: 0 -12px;
 }
 
 .slider-list {
@@ -280,7 +287,7 @@ button {
   width: 88px;
   justify-content: space-between;
   list-style: none;
-  padding-left: 139px;
+  padding-left: 138px;
   margin: 0;
 }
 
@@ -323,6 +330,7 @@ button {
 .layout-product{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
+column-gap: 40px;
 }
 
 .product article {
@@ -334,7 +342,7 @@ grid-template-columns: 1fr 1fr 1fr;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-top: 25px;
+  margin-top: 19px;
   margin-bottom: 16px;
 }
 
@@ -420,7 +428,7 @@ grid-template-columns: 1fr 1fr 1fr;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-column-gap: 22px;
+  grid-column-gap: 3px;
   grid-row-gap: 10px;
 }
 
@@ -428,11 +436,12 @@ grid-template-columns: 1fr 1fr 1fr;
   display: grid;
   grid-template-columns: 1fr min-content;
   width: 1160px;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
 }
 
 .about-level {
   text-align: center;
+  width: 362px;
 }
 
 .about::before{
@@ -446,6 +455,7 @@ grid-template-columns: 1fr 1fr 1fr;
 .about-opportunities {
   font-size: 16px;
   line-height: 24px;
+  min-width: 651px;
 }
 
 .about-opportunities-losung {
@@ -453,14 +463,13 @@ grid-template-columns: 1fr 1fr 1fr;
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
-  margin-top: 73px;
+  margin-top: 75px;
   margin-bottom: 32px;
 }
 
 .about-opportunities-text {
 width: 615px;
 margin: 0;
-
 }
 
 .about-opportunities-preview {
@@ -469,8 +478,8 @@ margin: 0;
   line-height: 24px;
   text-transform: uppercase;
   color: var(--basic-light-black);
-  margin-bottom: 23px;
-  margin-top: 40px;
+  margin-bottom: 24px;
+  margin-top: 42px;
 }
 
 .about-opportunities-list {
@@ -485,8 +494,8 @@ margin: 0;
 }
 
 .about-opportunities-item {
-  padding-left: 32px;
-  margin-bottom: 36px;
+  padding-left: 34px;
+  margin-bottom: 24px;
   position: relative;
 }
 
@@ -505,8 +514,11 @@ margin: 0;
   text-transform: uppercase;
   padding-top: 284px;
   position: relative;
-  margin-top: 18px;
+  margin-top: 3px;
   margin-bottom: 31px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .about-level-text::before {
@@ -517,7 +529,7 @@ margin: 0;
   background-position: 0 0;
   position: absolute;
   top: 39px;
-  left: -17px;
+  left: 2px;
 }
 
 .about-level-discription-term {
@@ -527,6 +539,7 @@ margin: 0;
   line-height: 64px;
   color: var(--basic-black);
   grid-row: 1/2;
+  text-align: left;
 }
 
 .about-level-discription-definition {
@@ -568,12 +581,13 @@ margin: 0;
   list-style: none;
   padding: 0;
   margin: 0;
+  height: 181px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .partners-item {
-  margin: 44px auto;
+  margin: auto;
   position: relative;
 }
 
@@ -614,7 +628,7 @@ margin: 0;
 }
 
 .layout-footer {
-  margin-top: 68px;
+  margin-top: 55px;
   display: grid;
   grid-template-columns: min-content 1fr;
 }
@@ -682,7 +696,7 @@ margin: 0;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  padding-top: 49px;
+  padding-top: 47px;
   text-transform: uppercase;
 }
 
@@ -692,10 +706,13 @@ margin: 0;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-light-gray);
+  margin-top: 23px;
 }
 
 .telephone-link {
   color: var(--basic-light-gray);
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .send-message {
@@ -721,8 +738,9 @@ margin: 0;
 }
 
 .last-word {
-  margin-top: 68px;
-  margin-left: 140px;
+  margin-top: 73px;
+  margin-left: 133px;
+  margin-bottom: 50px;
 }
 
 .last-word h2 {
@@ -737,6 +755,7 @@ margin: 0;
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-dark-gray-200);
+  margin-top: 10px;
 }
 
 
@@ -1343,5 +1362,4 @@ margin: 0;
 .button-close:focus{
   opacity: 0.1;
 }
-
 
