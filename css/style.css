@@ -14,11 +14,13 @@
   --basic-black: #000000;
   --basic-light-black: #283136;
 
+  --special-dark-gray-200-opacity: rgb(68,68,68,0.4);
   --special-black-sorting: #231F20;
   --special-gray-sorting: #A6A6A6;
   --special-gray-border: #DBDBDB;
   --special-gray-hover: #DFDFDF;
   --special-gray-filter: #4d4d4d;
+  --special-gray-input: #D7DCDE;
   --special-gray-button-focus: #D5D5D5;
   --special-black-opacity: rgba(0,0,0,0.3);
   --special-white-opacity: rgba(255, 0, 0,0.3);
@@ -843,6 +845,9 @@ margin: 0;
   opacity: 0.2;
 }
 
+.descending-sort:hover::after, .ascending-sort:hover::after {
+  opacity: 1;
+}
 
 
 .product-card {
@@ -1227,3 +1232,116 @@ margin: 0;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   color: var(--special-black-opacity);
 }
+
+.modal {
+  position: fixed;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.modal-feedback {
+ 
+  bottom: 180px;
+  top: auto;
+  background-color: var(--basic-white);
+  z-index: 3;
+  width: 960px;
+  height: 590px;
+  padding: 63px 100px 84px 100px;
+  box-sizing: border-box;
+  box-shadow: 0px 20px 40px rgba(36, 15, 15, 0.4);
+}
+
+.modal-feedback h1 {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+  text-transform: uppercase;
+}
+
+.modal-feedback ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feedback-form {
+  margin-top: 37px;
+}
+
+.modal-feedback label {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.feedback-form input {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.feedback-form input[type="text"] {
+  width: 360px;
+  height: 50px;
+  margin-top: 9px;
+  margin-bottom: 34px;
+  border: 2px solid var(--special-gray-input);
+  border-radius: 3px;
+  color: var(--special-dark-gray-200-opacity);
+  padding: 16px;
+}
+
+.feedback-form textarea {
+  width: 760px;
+  height: 118px;
+  margin-top: 9px;
+  margin-bottom: 47px;
+  box-sizing: border-box;
+  border: 2px solid var(--special-gray-input);
+  color: var(--special-dark-gray-200-opacity);
+  border-radius: 3px;
+  padding: 16px;
+}
+
+.feedback-form textarea::placeholder {
+  color: var(--special-dark-gray-200-opacity);
+}
+
+.feedback-submit {
+  color: var(--basic-white);
+  width: 259px;
+  height: 50px;
+  border: 0;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.button-close{
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top:78px;
+  right:90px;
+  box-shadow: none;
+  border: none;
+  background-image: url(../img/button-close.png);
+  background-color: var(--basic-white);
+  opacity: 0.3;
+}
+
+.button-close:hover{
+  opacity: 1;
+}
+
+.button-close:focus{
+  opacity: 0.1;
+}
+
+

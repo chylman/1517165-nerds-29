@@ -168,9 +168,9 @@
 
     <section class="modal modal-feedback">
       <h2>Напишите нам</h2>
-      <form method="post" action="https://echo.htmlacademy.ru/">
+      <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru/">
         <ul>
-          <li>
+          <li class="feedback-form-item">
             <label for="name">Ваше имя:</label>
             <input type="text" id="name" value="Имя Фамилия">
           </li>
@@ -180,13 +180,13 @@
           </li>
           <li>
             <label for="msg">Текст письма:</label>
-            <input type="text-area" id="msg" value="В свободной форме">
+            <textarea type="text-area" id="msg" placeholder="В свободной форме"></textarea>
           </li>
           <li>
-            <button type="submit">Оправить</button>
+            <button class="button-pink feedback-submit" type="submit">Отправить</button>
           </li>
           <li>
-            <button type="button">Закрыть</button>
+            <button class="button-close" type="button"></button>
           </li>
         </ul>
       </form>
