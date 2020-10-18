@@ -137,8 +137,8 @@ button {
   width: 73px;
   height: 2px;
   position: absolute;
-  bottom: -10px;
-  left: 2px;
+  bottom: -15px;
+  left: 0px;
   background-color: var(--basic-pink);
 }
 
@@ -819,9 +819,9 @@ width: 100%;
   font-size:55px;
   line-height: 55px;
   background-color: var(--basic-gray);
-  padding-top: 78px;
-  padding-bottom: 108px;
   margin: 0;
+  padding-top: 65px;
+  padding-bottom: 108px;
   text-align: center;
 }
 
@@ -834,7 +834,7 @@ width: 100%;
   line-height: 30px;
   color: var(--basic-black);
   margin-top: 55px;
-  margin-bottom: 43px;
+  margin-bottom: 48px;
 }
 
 .sorting-text {
@@ -846,12 +846,19 @@ width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
-  width: 359px;
+  width: 365px;
   list-style: none;
   padding: 0;
+  padding-right: 0px;
   margin: 0;
+  box-sizing: border-box;
 }
+
+
+.sorting-list li:nth-child(3) {
+  margin-right: 20px;
+}
+
 
 .sorting-item {
   color: var(--special-black-opacity);
@@ -863,6 +870,7 @@ width: 100%;
   line-height: 18px;
   border: 0;
 }
+
 
 .sorting-item:disabled {
   color: var(--basic-black);
@@ -876,6 +884,7 @@ width: 100%;
 .sorting-item:focus {
   opacity: 1;
 }
+
 
 .descending-sort, .ascending-sort {
   position: relative;
@@ -918,7 +927,7 @@ width: 100%;
 
 .product-card-item{
   padding:0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   width: 360px;
   height: 620px;
   border-radius: 5px;
@@ -937,8 +946,8 @@ width: 100%;
   position: absolute;
   width: 14px;
   height: 14px;
-  top: 13px;
-  left: 0px;
+  top: 12px;
+  left: -12px;
   border-radius: 50%;
   box-shadow:
     25px 0 0 0 var(--basic-white),
@@ -1084,6 +1093,10 @@ width: 100%;
 
 /* Filter*/
 
+.filter {
+  margin-top: 59px;
+}
+
 .filter-item {
   margin: 0;
   padding: 0;
@@ -1094,12 +1107,12 @@ width: 100%;
   list-style: none;
   margin: 0;
   padding-left: 36px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: var(--basic-light-black);
 }
 
 .filter-item li:first-child {
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 .filter-item ul {
@@ -1196,7 +1209,7 @@ width: 100%;
 }
 
 .grid {
-  margin-top: 54px;
+  margin-top: 57px;
 }
 
 .filter-input-radio+label::before {
@@ -1223,7 +1236,7 @@ width: 100%;
   opacity: 0.4;
 }
 
-.filter-input-radio:hover+label::after, .filter-input-radio:hover+label::before  {
+.filter-input-radio:hover+label::after, .filter-input-radio:hover+label::before, .filter-input-radio:focus+label::after, .filter-input-radio:focus+label::before  {
   opacity: 1;
 }
 
@@ -1264,12 +1277,12 @@ width: 100%;
   opacity: 0.4;
 }
 
-.filter-input-checkbox:hover+label::before, .filter-input-checkbox:hover+label::after{
+.filter-input-checkbox:hover+label::before, .filter-input-checkbox:hover+label::after, .filter-input-checkbox:focus+label::before, .filter-input-checkbox:focus+label::after{
   opacity: 1;
 }
 
 .filter-product button {
-  margin-top: 50px;
+  margin-top: 32px;
   width: 260px;
   height: 50px;
   border-radius: 3px;

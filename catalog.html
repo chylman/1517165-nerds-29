@@ -39,7 +39,7 @@
         <div class="layout-catalog-columns">
           <section class="filter">
             <h2 class="hidden">Фильтр</h2>
-            <form class="filter-product" action="https://echo.htmlacademy.ru/" method="post">
+            <form class="filter-product" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="filter-item">
                 <legend>Стоимость:</legend>
                 <div class="range-filter">
@@ -64,15 +64,15 @@
                 <legend>Сетка:</legend>
                 <ul>
                   <li>
-                    <input class="hidden filter-input-radio filter-input" type="radio" name="grid" id="filter-adaptive">
+                    <input class="hidden filter-input-radio filter-input" type="radio" name="grid" id="filter-adaptive" value="adaptive">
                     <label for="filter-adaptive">Адаптивная</label>
                   </li>
                   <li>
-                    <input class="hidden filter-input-radio filter-input" type="radio" name="grid" id="filter-fix">
+                    <input class="hidden filter-input-radio filter-input" type="radio" name="grid" id="filter-fix" value="fix">
                     <label for="filter-fix">Фиксированная</label>
                   </li>
                   <li>
-                    <input class="hidden filter-input-radio filter-input" type="radio" name="grid" id="filter-rubber">
+                    <input class="hidden filter-input-radio filter-input" type="radio" name="grid" id="filter-rubber" value="rubber">
                     <label for="filter-rubber">Резиновая</label>
                   </li>
                 </ul>
@@ -102,7 +102,7 @@
                   </li>
                 </ul>
               </fieldset>  
-              <button class="submit">Показать</button>
+              <button type="submit">Показать</button>
             </form>
           </section>
           <section class="sorting">
@@ -123,7 +123,7 @@
               <div class="product-card-info">
                 <a class="product-card-item-link" href="#"><h3>Sedona</h3></a>
                 <p class="product-card-item-text">Информационный сайт для туристов</p>
-                <button class="buy" type="button" name="">9990&#8381;</button>
+                <button class="buy" type="button" name="" aria-label="Купить  сайт седона по цене">9990&#8381;</button>
               </div>
             </article>
             <article class="product-card-item">
@@ -131,7 +131,7 @@
               <div class="product-card-info">
                 <a class="product-card-item-link" href="#"><h3>Pink App</h3></a>
                 <p class="product-card-item-text">Продуктовый лендинг приложения для iOS и Android</p>
-                <button class="buy" type="button" name="">9990&#8381;</button>
+                <button class="buy" type="button" name="" aria-label="Купить лендинг по цене">9990&#8381;</button>
             </div>
             </article>
             <article class="product-card-item">
@@ -139,7 +139,7 @@
               <div class="product-card-info">  
                 <a class="product-card-item-link" href="#"><h3>Barbershop Borodinski</h3></a>
                 <p class="product-card-item-text">Сайт Барбершопа</p>
-                <button class="buy" type="button" name="">9990&#8381;</button>
+                <button class="buy" type="button" name="" aria-label="Купить сайт Барбершоп по цене">9990&#8381;</button>
               </div>
             </article>
             <article class="product-card-item">
@@ -147,7 +147,23 @@
               <div class="product-card-info">
                 <a class="product-card-item-link" href="#"><h3>Mishka</h3></a>
                 <p class="product-card-item-text">Магазин вязаных Мишек ручной работы</p>
-                <button class="buy" type="button" name="">9990&#8381;</button>
+                <button class="buy" type="button" name="" aria-label="Купить сайт магазина вязанных мишек по цене">9990&#8381;</button>
+              </div>
+            </article>
+            <article class="product-card-item">
+              <img class="product-card-item-img" src="img/mishka.jpg" alt="Screenshot internet-shop Mishka" width="359px" height="576px">
+              <div class="product-card-info">
+                <a class="product-card-item-link" href="#"><h3>A Plus</h3></a>
+                <p class="product-card-item-text">Лендинг курсов повышения квалификации</p>
+                <button class="buy" type="button" name="" aria-label="Купить лендинг курсов повышения квалификации по цене">9990&#8381;</button>
+              </div>
+            </article>
+            <article class="product-card-item">
+              <img class="product-card-item-img" src="img/mishka.jpg" alt="Screenshot internet-shop Mishka" width="359px" height="576px">
+              <div class="product-card-info">
+                <a class="product-card-item-link" href="#"><h3>КВАСТ</h3></a>
+                <p class="product-card-item-text">Промо-сайт производителя крафтового кваса</p>
+                <button class="buy" type="button" name="" aria-label="Купить промо-сайт производителя по цене">9990&#8381;</button>
               </div>
             </article>
             <article class="product-card-pagination">
@@ -175,13 +191,13 @@
           <section class="socials">
             <ul class="socials-list">
               <li class="socials-item">
-                <a href="#"><img src="img/vk-icon.svg" alt="vk.com"></a>
+                <a href="#" area-label="Вконтакте"><img focusable="false" aria-hidden="true" src="img/vk-icon.svg" alt="vk.com"></a>
               </li>
               <li class="socials-item">
-                <a href="#"><img src="img/fb-icon.svg" alt="facebook.com"></a>
+                <a href="#" area-label="Фейсбук"><img focusable="false" aria-hidden="true" src="img/fb-icon.svg" alt="facebook.com"></a>
               </li>
               <li class="socials-item">
-                <a href="#"><img src="img/insta-icon.svg" alt="Instagram.com"></a>
+                <a href="#" area-label="Инстаграм"><img focusable="false" aria-hidden="true" src="img/insta-icon.svg" alt="Instagram.com"></a>
               </li>
             </ul>
           </section>
@@ -194,6 +210,5 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002753!2d30.320858715595957!3d59.93871916905476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602399910989!5m2!1sru!2sru" width="1440" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" alt="Санкт-Петербург,
       ул.Б.Конюшенная, д. 19/8"></iframe>
     </footer>
-    
   /<body>
 </HTML>
