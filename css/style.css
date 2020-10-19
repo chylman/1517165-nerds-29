@@ -1306,11 +1306,12 @@ width: 100%;
 
 .modal {
   position: fixed;
-  margin: auto;
-  top: 0;
+  top: 54px;
   right: 0;
-  bottom: 0;
+  bottom: auto;
   left: 0;
+  margin: auto;
+  
 }
 
 .modal-eror {
@@ -1322,9 +1323,8 @@ width: 100%;
 }
 
 .modal-feedback {
- 
-  bottom: 180px;
   top: auto;
+  bottom: 180px;
   background-color: var(--basic-white);
   z-index: 3;
   width: 960px;
