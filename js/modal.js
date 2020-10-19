@@ -12,12 +12,14 @@ const sliderText = document.querySelectorAll(".slider-text");
 
 sendMsgBtn.addEventListener("click", function(evt) {
     feedbackModal.classList.remove("hidden");
+    feedbackModal.classList.add("modal-feedback-animation");
     nameFeedback.focus();
 })
 
 closeBtn.addEventListener("click", function(evt){
     feedbackModal.classList.add("hidden");
     feedbackModal.classList.remove("modal-eror");
+    feedbackModal.classList.remove("modal-feedback-animation");
 })
 
 window.addEventListener("keydown", function(evt){
@@ -25,6 +27,7 @@ window.addEventListener("keydown", function(evt){
         if (!feedbackModal.classList.contains("hidden")){    
         feedbackModal.classList.add("hidden");
         feedbackModal.classList.remove("modal-eror");
+        feedbackModal.classList.remove("modal-feedback-animation");
         } 
     }
 })
