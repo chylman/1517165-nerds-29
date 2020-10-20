@@ -9,17 +9,31 @@ const sliderBtn = document.querySelectorAll(".slider-button");
 const sliderContent = document.querySelector(".slider-content");
 const sliderText = document.querySelectorAll(".slider-text");
 
+let isStorageSupport = true;
+let storage = "";
+
+try {
+  storage = localStorage.getItem("name");
+} catch (err) {
+  isStorageSupport = false;
+}
 
 sendMsgBtn.addEventListener("click", function(evt) {
     feedbackModal.classList.remove("hidden");
     feedbackModal.classList.add("modal-feedback-animation");
-    nameFeedback.focus();
+    if (storage) {
+        nameFeedback.value = storage;
+        emailFeedback.focus();
+      } else {
+            nameFeedback.focus();
+        }
 })
 
 closeBtn.addEventListener("click", function(evt){
     feedbackModal.classList.add("hidden");
-    feedbackModal.classList.remove("modal-eror");
     feedbackModal.classList.remove("modal-feedback-animation");
+    feedbackModal.classList.remove("modal-eror");
+    
 })
 
 window.addEventListener("keydown", function(evt){
@@ -36,10 +50,15 @@ window.addEventListener("keydown", function(evt){
 formFeedback.addEventListener("submit", function(evt){
     if (!nameFeedback.value || !emailFeedback.value || !messageFeedback.value) {
         evt.preventDefault();
+        feedbackModal.classList.remove("modal-feedback-animation");
         feedbackModal.classList.remove("modal-eror");
         feedbackModal.offsetWidth = feedbackModal.offsetWidth; 
         feedbackModal.classList.add("modal-eror");
-    } 
+    } else{
+        if (isStorageSupport) {
+            localStorage.setItem("name", nameFeedback.value)
+        }
+    }
 })
 
 //Slider

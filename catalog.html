@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body inner-page">
     <div class="background">
@@ -212,19 +212,19 @@
 
     <section class="modal modal-feedback hidden">
       <h2>Напишите нам</h2>
-      <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru/">
+      <form class="feedback-form" method="GET" action="https://echo.htmlacademy.ru/">
         <ul>
           <li class="feedback-form-item">
             <label for="name">Ваше имя:</label>
-            <input class="name-form" type="text" id="name" placeholder="Имя Фамилия">
+            <input class="name-form" type="text" id="name" name="name" placeholder="Имя Фамилия">
           </li>
           <li>
             <label for="email">Ваш email:</label>
-            <input class="email-form" type="text" id="email" placeholder="email@example.com">
+            <input class="email-form" type="text" id="email" name="email" placeholder="email@example.com">
           </li>
           <li>
             <label for="msg">Текст письма:</label>
-            <textarea class="message-form" id="msg" placeholder="В свободной форме"></textarea>
+            <textarea class="message-form" id="msg" placeholder="В свободной форме" name="text"></textarea>
           </li>
           <li>
             <button class="button-pink feedback-submit" type="submit">Отправить</button>
@@ -236,6 +236,6 @@
       </form>
     </section>
     
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.min.js"></script>
   </body>
 </HTML>
