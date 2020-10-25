@@ -19,6 +19,7 @@ try {
 }
 
 sendMsgBtn.addEventListener("click", function(evt) {
+    evt.preventDefault();
     feedbackModal.classList.remove("hidden");
     feedbackModal.classList.add("modal-feedback-animation");
     if (storage) {

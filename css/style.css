@@ -63,7 +63,7 @@
   height: 100%;
 }
 
-.main-header, .wrapper, .footer {
+.main-header, .wrapper {
   padding: 0 5px;
 } 
 
@@ -378,6 +378,9 @@ column-gap: 40px;
 }
 
 .product-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 160px;
   height: 50px;
   text-align: center;
@@ -700,7 +703,6 @@ width: 100%;
 }
 
 .socials-item a {
-  display: block;
   width: 81px;
   height: 81px;
   display: flex;
@@ -755,7 +757,9 @@ width: 100%;
 }
 
 .send-message {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 219px;
   height: 50px;
   border: 0px;
@@ -859,6 +863,13 @@ width: 100%;
   margin-right: 20px;
 }
 
+.sorting-list li {
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding-bottom: 5px;
+}
+
 
 .sorting-item {
   color: var(--special-black-opacity);
@@ -872,8 +883,9 @@ width: 100%;
 }
 
 
-.sorting-item:disabled {
-  color: var(--basic-black);
+.sorting-current, .sorting-current.descending-sort::after, .sorting-current.ascending-sort::after  {
+  color: var(--basic-black); 
+  opacity: 1;
 }
 
 .sorting-item:hover {
@@ -893,6 +905,9 @@ width: 100%;
 .descending-sort::after {
   content:"";
   display: block;
+  position: absolute;
+  top: -15px;
+  left: -10px;
   width: 0;
 	height: 0;
 	border-left: 5.5px solid transparent;
@@ -904,6 +919,9 @@ width: 100%;
 .ascending-sort::after {
   content:"";
   display: block;
+  position: absolute;
+  top: -15px;
+  left: -10px;
   width: 0;
 	height: 0;
 	border-left: 5.5px solid transparent;

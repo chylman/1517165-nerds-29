@@ -32,11 +32,8 @@
       </header>
     </div>
     <main>
-      <div class="background">
         <h1 class="main-title">Магазин готовых шаблонов</h1>
-      </div>
-      <div class="wrapper">
-        <div class="layout-catalog-columns">
+      <div class="wrapper layout-catalog-columns">
           <section class="filter">
             <h2 class="hidden">Фильтр</h2>
             <form class="filter-product" action="https://echo.htmlacademy.ru/" method="get">
@@ -109,11 +106,11 @@
             <h2 class="hidden">Сортировка</h2>
             <p class="sorting-text">Сортировать:</p>
             <ul class="sorting-list">
-              <li> <button class="sorting-item" type="button" name="button" disabled>По цене</button></li>
-              <li> <button class="sorting-item" type="button" name="button">По типу</button></li>
-              <li> <button class="sorting-item" type="button" name="button">По названию</button></li>
-              <li> <button class="sorting-item descending-sort sorting-current" type="button" name="button" aria-label="По убыванию"></button></li>
-              <li> <button class="sorting-item ascending-sort" type="button" name="button" aria-label="По возрастанию"></button></li>
+              <li> <a class="sorting-item sorting-current" href="#">По цене</a></li>
+              <li> <a class="sorting-item" href="#">По типу</a></li>
+              <li> <a class="sorting-item" href="#">По названию</a></li>
+              <li> <a class="sorting-item descending-sort sorting-current" aria-label="По убыванию" href="#"></a></li>
+              <li> <a class="sorting-item ascending-sort" aria-label="По возрастанию" href="#"></a></li>
             </ul>
           </section>
           <section class="product-card">
@@ -175,7 +172,6 @@
               </ul>
             </article>
           </section>
-        </div>
       </div>
     </main>
     <footer class="footer">
