@@ -249,6 +249,7 @@ button {
 
 .more {
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
   box-sizing: border-box;
   padding-top: 17px;
@@ -648,6 +649,7 @@ width: 100%;
 .partners-item:not(:last-of-type):after {
   content: "";
   display: inline-block;
+  vertical-align: bottom;
   position: absolute;
   height: 52px;
   width: 2px;
