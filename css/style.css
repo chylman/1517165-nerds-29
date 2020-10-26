@@ -1,16 +1,22 @@
 /* Variables */
 :root {
   --basic-gray: #EEEEEE;
+  --basic-gray10: #ababab;
+  --basic-gray20: #cfcfcf;
   --basic-gray-darkinest: #c1c1c1;
   --basic-over-dark-gray: rgba(77, 77, 77, 1);
   --basic-dark-gray-200: #444444;
   --basic-dark-gray: #888888;
+  --basik-gray10: #283136;
   --basic-over-dark-gray-opacity: rgb(77,77,77,0.1);
   --basic-light-gray: #666666;
   --basic-pink: #FB565A;
   --basic-green: #00CA74;
   --basic-yellow: #EFC849;
   --basic-white: #FFFFFF;
+  --basic-white10: #E1E1E1;
+  --basic-white20: #f1f1f1;
+  --basic-white30: #d7dcde;
   --basic-black: #000000;
   --basic-light-black: #283136;
 
@@ -22,7 +28,12 @@
   --special-gray-filter: #4d4d4d;
   --special-gray-input: #D7DCDE;
   --special-gray-button-focus: #D5D5D5;
+  --special-gray-opacity: rgba(255,255,255,0.3);
   --special-black-opacity: rgba(0,0,0,0.3);
+  --special-black-opacity10: rgba(0, 1, 1, 0.1);
+  --special-black-opacity20: rgba(0, 0, 0, 0.1);
+  --special-black-opacity25: rgba(0, 1, 1, 0.25);
+  --special-black-opacity40:rgba(36, 15, 15, 0.4);
   --special-white-opacity: rgba(255, 0, 0,0.3);
   --special-pink-active: #E74246;
   --special-pink-press: #D7373B;
@@ -82,8 +93,8 @@ img {
   width: 1157px;
 }
 
-button {
-  font-family: "Roboto";
+.button {
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 /* Main-navigation*/
@@ -93,7 +104,7 @@ button {
 }
 
 .main-header-logo:active path {
-  fill: #A6A6A6;
+  fill: var(--special-gray-sorting);
 }
 
 .main-navigation {
@@ -271,7 +282,7 @@ button {
 .more:focus{
   color: var(--special-white-opacity);
   background-color: var(--special-pink-press);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--special-black-opacity10);
   border-radius: 3px;
 }
 
@@ -400,12 +411,13 @@ column-gap: 40px;
 
 .product-button:focus {
   color: var(--special-white-opacity);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--special-black-opacity10);
   border-radius: 3px;
 }
 
 .button-pink {
   background-color: var(--basic-pink);
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .button-green {
@@ -695,7 +707,7 @@ width: 100%;
   width: 81px;
   height: 81px;
   box-sizing: border-box;
-  background: linear-gradient(0deg, #E1E1E1, #E1E1E1);
+  background: linear-gradient(0deg, var(--basic-white10), var(--basic-white10));
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -716,8 +728,8 @@ width: 100%;
 }
 
 .socials-item:active {
-  background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  background: linear-gradient(0deg, var(--special-pink-press), var(--special-pink-press)), var(--basic-white);
+  box-shadow: inset 0px 3px 0px var(--special-black-opacity10);
 }
 
 .socials-item:active img {
@@ -777,9 +789,9 @@ width: 100%;
 }
 
 .send-message:focus {
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--special-black-opacity10);
   border-radius: 3px;
-  color: rgba(255,255,255,0.3);
+  color: var(--special-gray-opacity);
 }
 
 .last-word {
@@ -953,7 +965,7 @@ width: 100%;
   border-radius: 5px;
   position: relative;
   background-color: var(--basic-over-dark-gray-opacity) ;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid --special-black-opacity20;
 }
 
 .product-card-item img {
@@ -977,7 +989,7 @@ width: 100%;
 
 .product-card-item:hover img {
   background-color: var(--basic-over-dark-gray);
-  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
+  box-shadow: 0px 6px 15px var(--special-black-opacity25);
   border-radius: 5px;
 }
 
@@ -990,7 +1002,7 @@ width: 100%;
 }
 
 .product-card-item:hover .product-card-info {
-  height: 231px;
+  min-height: 231px;
   width: 360px;
   margin: 0;
   clip: auto;
@@ -1034,6 +1046,8 @@ width: 100%;
   padding: 0 52px 0 53px;
   text-align: center;
   margin-bottom: 32px;
+  max-height: 70px;
+  overflow: hidden;
 }
 
 .product-card-item-link h3 {
@@ -1105,8 +1119,8 @@ width: 100%;
 }
 
 .product-card-pagination-item:active a {
-  background: #D5D5D5;
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  background: var(--special-gray-button-focus);
+  box-shadow: inset 0px 3px 0px var(--special-black-opacity10);
   border-radius: 3px;
   color: var(--special-black-opacity);
 }
@@ -1159,19 +1173,19 @@ width: 100%;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: #f1f1f1;
+  background-color: var(--basic-white20);
   border-radius: 5px;
 }
 
 .range-controls .scale {
   height: 2px;
-  background: #d7dcde;
+  background: var(--basic-white30);
 }
 
 .range-controls .bar {
   width: 70%;
   height: 2px;
-  background: #00ca74;
+  background: var(--basic-green);
 }
 
 .range-controls .toggle {
@@ -1181,10 +1195,10 @@ width: 100%;
   width: 4px;
   height: 4px;
   padding: 0;
-  border: 8px solid #ffffff;
-  background-color: #ababab;
+  border: 8px solid var(--basic-white);
+  background-color: var(--basic-gray10);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 var(--basic-gray20);
   cursor: pointer;
 }
 
@@ -1212,10 +1226,10 @@ width: 100%;
   padding: 10px;
   margin-left: 10px;
   text-align: center;
-  color: #283136;
+  color: var(--basik-gray10);
   border: none;
   border-radius: 5px;
-  background: #f1f1f1;
+  background: var(--basic-white20);
   font-family: inherit;
   font-size: inherit;
 }
@@ -1320,7 +1334,7 @@ width: 100%;
 
 .filter-product button:focus {
   background-color: var(--special-gray-button-focus);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--special-black-opacity10);
   color: var(--special-black-opacity);
 }
 
@@ -1351,7 +1365,7 @@ width: 100%;
   height: 590px;
   padding: 63px 100px 84px 100px;
   box-sizing: border-box;
-  box-shadow: 0px 20px 40px rgba(36, 15, 15, 0.4);
+  box-shadow: 0px 20px 40px var(--special-black-opacity40);
 }
 
 .modal-feedback h1 {
@@ -1411,7 +1425,7 @@ width: 100%;
   border: 2px solid var(--special-pink-active);
   border-radius: 3px;
   color: var(--special-pink-active);
-  background: #FFFFFF;
+  background: var(--basic-white);
 }
 
 .feedback-form input:focus {
